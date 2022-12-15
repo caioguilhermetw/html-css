@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+            # = id
+            . = class
+            : = pseudo-class
+           :: = pseudo-element
+            > = clildren
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: rgb(97, 240, 53);
+        }
+
+        a:visited{
+            color: rgb(233, 64, 41);
+        }
+
+        a:hover {
+            color: black;
+        }
+
+        a:active {
+            color: rgb(64, 146, 240);
+        }
+
+        .especial::before{
+            content:' => ';
+            color: brown;
+        }
+
+        .especial::after{
+            content: ' <= ';
+            color: brown;
+        }
+
+
+
+        .teste::before{
+            content: "fuck brown ";
+
+        }
+        .teste::after{
+            content: " cor de buset humm";
+            color: rgb(252, 145, 243);
+        }
+            
+        
+         
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" >Repositorio GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" class="especial">Canal do youtube</a></li>
+        <li><a href="https:/www.cursoemvideo.com" class="especial">Site do curso em video</a> </li>
+
+        <h1 class="teste">Laranja gostosa</h1>
+
+    </ul>
+    
+</body>
+</html>

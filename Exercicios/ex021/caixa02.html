@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags divs especiais</title>
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(35, 36, 94);
+            margin: 0px;
+
+        }
+
+        header{
+            font-weight: normal;
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(80, 80, 80);
+            padding: 3px;
+        }
+        nav{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+           
+
+        }
+
+        nav > a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        main{
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 10px;
+            box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.507);
+        }
+
+        article{
+            background-color: rgb(184, 184, 184);
+            padding: 5px;
+
+        }
+
+        article > aside{
+            background-color: rgb(145, 145, 145);
+            color: rgb(34, 34, 34);
+        }
+        footer{
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 4px;
+            
+        }
+    
+        main > section {
+            background-color: rgb(182, 182, 182);
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+      
+        div#Bola{
+             width: 200px ;
+             height: 200px;
+             margin: 10px;
+             background-color: aliceblue;
+             border-radius: 50%; /* ou 50px*/
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#" >Link</a>
+            <a href="#" >Link</a>
+            <a href="#" >Link</a>
+            <a href="#" >link</a>
+             
+        </nav>   
+    </header>
+    <main>
+        <section id="assuntos">
+           <p>Flamengo melhor time do mundo</p> 
+        </section>
+        <section id="Noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, natus eius harum error itaque officia quas a consectetur saepe suscipit dignissimos, eveniet alias at quia odit ipsa magnam optio debitis.</p>
+                <aside>
+                    <p>Artigo escrito por josé da silva</p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+    <div id="Bola"></div>
+    
+</body>
+</html>
